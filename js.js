@@ -16,6 +16,8 @@ $(document).ready (function() {
                     window.location.href = getPageByID(nextPage);
             }
 
+
+            console.log(window.location.href);
             //prevent page fom scrolling
             return false;
         });
