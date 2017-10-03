@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Jquery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Pentia Landing Page</title>
+</head>
+<body>
+    <div class="page-id" hidden>3</div>
+    <div class="container">
+        <div class="sidebar" id="sidebar">
+            <div class="logo-wrapper">
+                <img src="./assets/logo.svg" alt="Pentia logo" class="logo">
+            </div>
+            <div class="menu">
+                <div class="menu-lines" id="line1"></div>
+                <div class="menu-lines" id="line2"></div>
+                <div class="menu-lines" id="line3"></div>
+                <div class="menu-lines" id="line4"></div>
+            </div>
+        </div>
+        <div class="main-content">
+
+            <!-- Form -->
+            <div class="container-3 container-fluid">
+                <div class="form-header">
+                    <h2 class="text-white">Få 10 gode råd om <br> digital transformation</h2>
+                    <h4 class="text-white">Ja tak, jeg vil gerne høre mere om digital transformation</h4>
+                </div>
+                <form>
+                    <div class="form-container">
+                        <div class="form-row">
+                            <input class="form-item" type="text" name="" id="name" placeholder="Navn">
+                        </div>
+                        <div class="form-row">
+                            <input class="form-item no-spinners" type="number" name="" id="mobile" placeholder="Mobil">
+                            <input class="form-item" type="mail" name="" id="mail" placeholder="e-mail">  
+                        </div>
+                        <div class="form-row">
+                            <input class="form-item no-spinners" type="number" id="postCode" placeholder="Postnr.">
+                            <input class="form-item" type="text" name="" id="city" placeholder="By">
+                        </div>
+                    </div>  
+                    <div class="form-button-container">
+                        <button id="form-button" onclick="formSubmitted(event)">Ring mig op</button>
+                    </div>
+                </form>
+                <div class="trophy-wrapper">
+                    <img src="./assets/prize.svg" alt="trophy" class="trophy">
+                    <p class="text-white">Pentia vinder pris for digital innovation 2017</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js.js"></script>
+
+</body>
+</html>
