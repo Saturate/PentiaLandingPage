@@ -601,10 +601,9 @@ h5 {
     width: 90%; }
 
   .trophy-wrapper {
-    margin-top: 40px;
+    flex-direction: row;
     margin-bottom: 10px;
-    margin-left: 10%;
-    margin-right: 10%; } }
+    width: 90%; } }
 @media only screen and (min-width: 768px) {
   .form-button-container {
     flex-basis: 5; }
