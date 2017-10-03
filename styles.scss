@@ -355,7 +355,9 @@ h5 {
     color: $main-white;
 }
 
-// Media queries for zeppelin
+/* Media queries for zeppelin */
+
+// Small Mobile
 @media only screen and (max-width: $mobile-small-max-width){
     .header {
         display: none;
@@ -380,6 +382,7 @@ h5 {
     }
 }
 
+// Regular Mobile
 @media only screen and (max-width: $mobile-max-width) {
     .title-container {
         width: 96%;
@@ -404,6 +407,7 @@ h5 {
     }
 }
 
+// Desktop
 @media only screen and (min-width: $tablet-max-width){
     .text-container{
         width: 50%;
@@ -673,6 +677,7 @@ h5 {
         width: 90%;
     }
     .trophy-wrapper {
+        margin-top: 10px;
         margin-left: 10%;
         margin-right: 10%;
     }
