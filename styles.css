@@ -1,15 +1,15 @@
 @font-face {
   font-family: "Gotham-black";
-  src: url("~/assets/fonts/gotham-black-webfont.woff2") format("woff2"); }
+  src: url("./assets/fonts/gotham-black-webfont.woff2") format("woff2"); }
 @font-face {
   font-family: "Gotham-bold";
-  src: url("~/assets/fonts/gotham-bold-webfont.woff2") format("woff2"); }
+  src: url("./assets/fonts/gotham-bold-webfont.woff2") format("woff2"); }
 @font-face {
   font-family: "Gotham-book";
-  src: url("~/assets/fonts/gotham-book-webfont.woff2") format("woff2"); }
+  src: url("./assets/fonts/gotham-book-webfont.woff2") format("woff2"); }
 @font-face {
   font-family: "Gotham-xlight";
-  src: url("~/assets/fonts/gotham-xlight-webfont.woff2") format("woff2"); }
+  src: url("./assets/fonts/gotham-xlight-webfont.woff2") format("woff2"); }
 html, body {
   height: 100%; }
 
