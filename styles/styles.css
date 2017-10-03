@@ -1,21 +1,21 @@
 @font-face {
   font-family: "Gotham-black";
-  src: url("./assets/fonts/gotham-black-webfont.woff2") format("woff2"), url("./assets/fonts/gotham-black-regular.ttf") format("truetype"); }
+  src: url("../assets/fonts/gotham-black-webfont.woff2") format("woff2"), url("../assets/fonts/gotham-black-regular.ttf") format("truetype"); }
 @font-face {
   font-family: "Gotham-bold";
-  src: url("./assets/fonts/gotham-bold-webfont.woff2") format("woff2"), url("./assets/fonts/gotham-bold-regular.ttf") format("truetype"); }
+  src: url("../assets/fonts/gotham-bold-webfont.woff2") format("woff2"), url("../assets/fonts/gotham-bold-regular.ttf") format("truetype"); }
 @font-face {
   font-family: "Gotham-book";
-  src: url("./assets/fonts/gotham-book-webfont.woff2") format("woff2"), url("./assets/fonts/gotham-book-regular.ttf") format("truetype"); }
+  src: url("../assets/fonts/gotham-book-webfont.woff2") format("woff2"), url("../assets/fonts/gotham-book-regular.ttf") format("truetype"); }
 @font-face {
   font-family: "Gotham-xlight";
-  src: url("./assets/fonts/gotham-xlight-webfont.woff2") format("woff2"), url("./assets/fonts/gotham-xlight-regular.ttf") format("truetype"); }
+  src: url("../assets/fonts/gotham-xlight-webfont.woff2") format("woff2"), url("../assets/fonts/gotham-xlight-regular.ttf") format("truetype"); }
 html, body {
   height: 100%; }
 
-/*
+/***********************
     Custom Scrollbar
-*/
+***********************/
 body::-webkit-scrollbar {
   width: 0.5em; }
 
@@ -26,9 +26,9 @@ body::-webkit-scrollbar-thumb {
   background-color: #f03c32;
   outline: 1px solid darkgray; }
 
-/* 
+/********************* 
     Global style 
-*/
+**********************/
 h1, h2, h3 {
   font-family: "Gotham-black"; }
 
@@ -101,9 +101,9 @@ h5 {
 .container {
   overflow: scroll; }
 
-/*
+/**********************
     Sidebar start 
-*/
+***********************/
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -283,9 +283,9 @@ h5 {
   height: 100%;
   overflow: hidden; }
 
-/* 
+/******************* 
     Zeppelin Start 
-*/
+********************/
 .container-zeppelin {
   background-color: #2A2A2C; }
 
@@ -382,9 +382,9 @@ h5 {
   .text-container {
     width: 50%; } }
 /* Zeppelin End */
-/* 
+/************************************* 
     Transformation and strategy Start 
-*/
+*************************************/
 .container-transform {
   background-color: #FFFFFF; }
 
@@ -453,9 +453,9 @@ h5 {
     -webkit-flex-direction: row;
     width: 80%; } }
 /* Transformation End */
-/* 
+/********************** 
     Form Start 
-*/
+**********************/
 .container-form {
   background-color: #f03c32; }
 
@@ -633,9 +633,9 @@ h5 {
       line-height: 1.0em;
       width: 70%; } }
 /* Form End */
-/*
+/**********************
     Global animations
-*/
+***********************/
 @-webkit-keyframes text-pop-in-transformation {
   from {
     opacity: 0;

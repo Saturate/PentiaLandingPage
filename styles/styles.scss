@@ -5,9 +5,9 @@ html, body {
     height: 100%;
 }
 
-/*
+/***********************
     Custom Scrollbar
-*/
+***********************/
 
 body::-webkit-scrollbar {
     width: 0.5em;
@@ -22,9 +22,9 @@ body::-webkit-scrollbar-thumb {
   outline: 1px solid darkgray;
 }
 
-/* 
+/********************* 
     Global style 
-*/
+**********************/
 
 h1, h2, h3 {
     font-family: $title-font;
@@ -47,7 +47,7 @@ h5 {
     font-weight: light;
 }
 
-// Global viariables on different screen-sizes
+// Global variables on different screen-sizes
 
 /* Mobile */
 @media only screen and (max-width: $mobile-max-width){
@@ -130,9 +130,9 @@ h5 {
     overflow: scroll;
 }
 
-/*
+/**********************
     Sidebar start 
-*/
+***********************/
 
 .sidebar {
     display: flex;
@@ -284,9 +284,9 @@ h5 {
     overflow: hidden;
 }
 
-/* 
+/******************* 
     Zeppelin Start 
-*/
+********************/
 
 .container-zeppelin {
     background-color: $main-black;
@@ -417,9 +417,9 @@ h5 {
 /* Zeppelin End */
 
 
-/* 
+/************************************* 
     Transformation and strategy Start 
-*/
+*************************************/
 
 .container-transform {
     background-color: $main-white;
@@ -513,9 +513,9 @@ h5 {
 /* Transformation End */
 
 
-/* 
+/********************** 
     Form Start 
-*/
+**********************/
 
 .container-form {
     background-color: $background-red;
@@ -735,9 +735,9 @@ h5 {
 
 /* Form End */
 
-/*
+/**********************
     Global animations
-*/
+***********************/
 
 @include keyframes(text-pop-in-transformation) {
     from { 
