@@ -20,7 +20,7 @@ body::-webkit-scrollbar {
   width: 0.5em; }
 
 body::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
+  -box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
 
 body::-webkit-scrollbar-thumb {
   background-color: #f03c32;
@@ -202,21 +202,21 @@ h5 {
     0% {
       width: 60px; }
     50% {
-      width: 13%; }
+      width: 120px; }
     100% {
       width: 100%; } }
   @-moz-keyframes sidebar-unfold {
     0% {
       width: 60px; }
     50% {
-      width: 13%; }
+      width: 120px; }
     100% {
       width: 100%; } }
   @keyframes sidebar-unfold {
     0% {
       width: 60px; }
     50% {
-      width: 13%; }
+      width: 120px; }
     100% {
       width: 100%; } } }
 .logo-wrapper {
@@ -274,14 +274,14 @@ h5 {
   right: 0;
   bottom: 0;
   left: 60px;
-  overflow: scroll; }
+  overflow: hidden; }
 
 .container-fluid {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
-  overflow: scroll; }
+  overflow: hidden; }
 
 /* 
     Zeppelin Start 
@@ -292,7 +292,8 @@ h5 {
 .header {
   align-self: flex-start;
   margin-top: 40px;
-  margin-left: 70px; }
+  margin-left: 70px;
+  -webkit-animation: text-pop-in 0.7s ease-in; }
 
 .text-wrapper {
   display: flex;
@@ -339,26 +340,24 @@ h5 {
   color: #FFFFFF; }
 
 @media only screen and (max-width: 449px) {
+  .header {
+    display: none; }
+
   .title-container {
-    margin-top: -8%;
+    margin-top: -10%;
     width: 96%; }
     .title-container h4 {
       line-height: 25px; }
 
   .text-container {
-    margin-top: -10%;
-    width: 90%; }
-
-  .zeppeliner {
     margin-top: -20%;
-    min-width: 30%;
-    min-height: 30%;
-    max-height: 40%; }
+    width: 95%;
+    line-height: 18px; }
 
   .journey-wrapper {
     flex-direction: row; }
     .journey-wrapper .journey-dot {
-      margin-left: 10px; } }
+      margin-left: 8px; } }
 @media only screen and (max-width: 768px) {
   .title-container {
     width: 96%; }
@@ -428,6 +427,13 @@ h5 {
   color: #2A2A2C;
   text-align: center; }
 
+@media only screen and (max-width: 449px) {
+  .strategySVG, .transformationSVG {
+    display: none; }
+
+  .text-container {
+    width: 95%;
+    line-height: 20px; } }
 @media only screen and (max-width: 992px) {
   .transformation-content {
     display: block;
@@ -589,6 +595,13 @@ h5 {
     opacity: 0; }
   to {
     opacity: 1; } }
+@media only screen and (max-width: 449px) {
+  .form-row {
+    width: 90%; }
+
+  .trophy-wrapper {
+    margin-left: 10%;
+    margin-right: 10%; } }
 @media only screen and (min-width: 768px) {
   .form-button-container {
     flex-basis: 5; }
@@ -615,9 +628,6 @@ h5 {
       padding: 15px 15px;
       line-height: 1.0em;
       width: 70%; } }
-@media only screen and (max-width: 449px) {
-  .form-row {
-    width: 90%; } }
 /* Form End */
 /*
     Global animations

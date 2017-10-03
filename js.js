@@ -16,14 +16,30 @@ $(document).ready (function() {
                     window.location.href = getPageByID(nextPage);
             }
 
-
-            console.log(window.location.href);
+            console.log(wheel);
             //prevent page fom scrolling
             return false;
         });
     }, 1000);
 
+    var lastY;
+
+    setTimeout(function() {
+       $('.container').on('touchmove', function(e){
+        var currentY = e.originalEvent.touches[0].clientY;
+        if(currentY > lastY){
+            // moved up
+            window.location.href = getPageByID(preveousPage);
+        } else if(currentY < lastY){
+            // moved down
+            window.location.href = getPageByID(nextPage);
+        }
+        lastY = currentY;
+       });
+    }, 1000 );
+
 });
+
 
 // Get local location
 function getPageByID(id){
