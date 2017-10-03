@@ -428,6 +428,7 @@ h5 {
   color: #2A2A2C;
   text-align: center; }
 
+/* Media queries transform */
 @media only screen and (max-width: 449px) {
   .strategySVG, .transformationSVG {
     display: none; }
@@ -455,7 +456,7 @@ h5 {
 /* 
     Form Start 
 */
-.container-3 {
+.container-form {
   background-color: #f03c32; }
 
 .form-header {
@@ -596,6 +597,7 @@ h5 {
     opacity: 0; }
   to {
     opacity: 1; } }
+/* Media queries Form */
 @media only screen and (max-width: 449px) {
   .form-row {
     width: 90%; }

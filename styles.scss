@@ -416,6 +416,7 @@ h5 {
 
 /* Zeppelin End */
 
+
 /* 
     Transformation and strategy Start 
 */
@@ -472,6 +473,9 @@ h5 {
     text-align: center;
 }
 
+/* Media queries transform */
+
+// Mobile
 @media only screen and (max-width:$mobile-small-max-width){
     .strategySVG, .transformationSVG {
         display: none;
@@ -482,6 +486,7 @@ h5 {
     }
 }
 
+// Tablet
 @media only screen and (max-width:$tablet-max-width){
     .transformation-content {
         display: block;
@@ -496,6 +501,7 @@ h5 {
     }
 }
 
+// Desktop
 @media only screen and (min-width:$tablet-max-width){
     .transformation-content {
         flex-direction: row;
@@ -506,11 +512,12 @@ h5 {
 
 /* Transformation End */
 
+
 /* 
     Form Start 
 */
 
-.container-3 {
+.container-form {
     background-color: $background-red;
 }
 
@@ -662,6 +669,7 @@ h5 {
     width: 20%;
 }
 
+// Local animation for trophy - no-translate
 @include keyframes(form-pop-in){
     from {
         opacity: 0;
@@ -672,6 +680,10 @@ h5 {
     }
 }
 
+
+/* Media queries Form */
+
+// Small Mobile
 @media only screen and (max-width:$mobile-small-max-width){
     .form-row {
         width: 90%;
@@ -683,6 +695,7 @@ h5 {
     }
 }
 
+// Regular Mobile
 @media only screen and (min-width:$mobile-max-width){
     .form-button-container{
         flex-basis: 5;
@@ -705,6 +718,7 @@ h5 {
     }
 }
 
+// Tablet
 @media only screen and (max-width:$tablet-max-width){
     .form-button-container {
         flex-basis: 1;

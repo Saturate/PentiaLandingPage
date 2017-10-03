@@ -16,7 +16,6 @@ $(document).ready (function() {
                     window.location.href = getPageByID(nextPage);
             }
 
-            console.log(wheel);
             //prevent page fom scrolling
             return false;
         });
@@ -41,7 +40,7 @@ $(document).ready (function() {
 });
 
 
-// Get local location
+// Get location
 function getPageByID(id){
     if(id === 1){
         return "index.html";
