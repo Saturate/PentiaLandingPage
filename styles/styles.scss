@@ -185,7 +185,7 @@ h5 {
 
     @include keyframes(sidebar-fold) {
         0% { width: 100%; }
-        50% { width: 80% }
+        50% { width: 80%; }
         100% { width: 60px; }
     }
 
@@ -249,8 +249,6 @@ h5 {
         width: 0%;
         left: 50%;
     }
-
-    
 }
 
 .menu-lines {
@@ -417,9 +415,9 @@ h5 {
 /* Zeppelin End */
 
 
-/************************************* 
+/************************************** 
     Transformation and strategy Start 
-*************************************/
+***************************************/
 
 .container-transform {
     background-color: $main-white;
